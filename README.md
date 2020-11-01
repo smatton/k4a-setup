@@ -1,6 +1,11 @@
 # k4a-setup
 set up kinect 4 azure on jetson xavier nx
 
+Information was collated from the following sources:
+https://github.com/etiennedub/pyk4a
+https://gist.github.com/madelinegannon/c212dbf24fc42c1f36776342754d81bc#2-install-kinect-packages
+https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md
+
 
 ### Create a python environement
 
@@ -70,8 +75,12 @@ export DISPLAY=:0
 https://github.com/etiennedub/pyk4a
 
 Notes to make sure k4a.lib ins in your LD_LIBRARY_PATH, which is should be if you installed via debian package manager
-pip install pyk4a
+
 ```bash
+# if using python < 3.8 you may need to instlal typing-extensions
+pip install typing-extensions
+
+pip install pyk4a
 
 ```
 
