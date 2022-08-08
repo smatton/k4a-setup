@@ -74,7 +74,8 @@ export DISPLAY=:0
 ### Instally python wrappers for k4a
 https://github.com/etiennedub/pyk4a
 
-Notes to make sure k4a.lib ins in your LD_LIBRARY_PATH, which is should be if you installed via debian package manager
+Notes to make sure k4a.lib ins in your LD_LIBRARY_PATH, which is should be if you installed via debian package manager.
+export LD_LIBRARY_PATH:/usr/include/k4a:$LD_LIBRARY_PATH
 
 ```bash
 # if using python < 3.8 you may need to instlal typing-extensions
